@@ -1,0 +1,11 @@
+# .shellcheckrc
+# Allow following source directives within $SCRIPT_DIR
+source-path=SCRIPTDIR
+source-path=SCRIPTDIR/lib
+source-path=SCRIPTDIR/lib/components
+
+# Specify shell dialect
+shell=bash
+
+# Disable specific checks that are too restrictive for our use case
+disable=SC2016 # Expressions don't expand in single quotes
